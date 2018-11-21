@@ -126,6 +126,7 @@ green
 
 turn_off_all
 		ldr r0,=GPIOA_ODR
+		ldr r1,[r0]
 		orr r1,r1,#0x00001e00
 		str r1,[r0]
 			
